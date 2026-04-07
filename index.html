@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+
+  
+  <style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(bg-desktop.svg);
+    background-color:  hsl(257, 40%, 49%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    position: relative;
+    min-height: 100vh;
+  }
+  header {
+    margin-bottom: 30px;
+  }
+   h1 {
+      font-family: 'Poppins', sans-serif;
+   }
+  main {
+    display: flex;
+    color: white;
+  }
+  .illustration {
+    margin-left: 20px;
+    
+  }
+  
+  .main {
+    margin-right: 30px;
+    margin: 5px;
+  }
+  button {
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    border-radius: 25px;
+    padding-inline: 25px;
+    padding-block: 5px;
+  }
+  button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: black;
+  }
+  .icons {
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  .icons i {
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 2px;
+  }
+  .icons i:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);;
+  }
+    .attribution { font-size: 0.6875rem; text-align: center; 
+    }
+    .attribution a { color: hsl(228, 45%, 44%);
+    }
+    @media (max-width: 600px) {
+      body {
+        background-image: url(bg-mobile.svg);
+      }
+        header {
+       width: 50%;
+     }
+     main {
+       flex-direction: column;
+     }
+     .illustration {
+       margin-top: 20px;
+     }
+   
+     #logo {
+       width: 100%;
+     }
+     .main {
+       text-align: center;
+       letter-spacing: 0.1em;
+       font-size: 1.10rem;
+       
+     }
+     #image {
+      width: 100%;
+      height: 100%;
+      padding-block: 30px;
+     }
+     .icons {
+       text-align: center;
+     }
+     button {
+       padding-inline: 65px;
+       padding-block: 12px;
+     }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.svg" alt="huddles logo" id="logo">
+  </header>
+
+<main>
+  <section class="illustration">
+    <img src="illustration-mockups.svg" alt="illustration-mockups.svg" width="450" height="350" id="image">
+  </section>
+  <section class="main">
+      <h1>Build The Community Your Fans Will Love</h1>
+<p>  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+  Create connections with your users as you engage in genuine discussion. 
+</p>
+  <button type="submit">Register</button>
+  </section>
+</main>
+ <div class="icons">
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+    </div>
+      <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="#">Louis Zubi</a>.
+    </footer>
+</body>
+</html>-
